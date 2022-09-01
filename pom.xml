@@ -133,7 +133,7 @@
                     <deployment>
                         <resources>
                             <resource>
-                                <type>jar</type>
+                                <type>war</type>
                                 <directory>${project.basedir}/target</directory>
                                 <includes>
                                     <include>*.war</include>
