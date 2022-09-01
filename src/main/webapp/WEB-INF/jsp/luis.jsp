@@ -4,7 +4,7 @@
 
 <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 
-<!DOCTYPE html>
+<!DOCTYPE  html>
 <html lang="en">
 
 <head>
