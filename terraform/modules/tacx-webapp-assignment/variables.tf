@@ -1,6 +1,6 @@
 variable "environment" {
   description = "Environment where all resource and application would be deployed"
-  default = "dev"
+  default     = "dev"
 }
 
 variable "create_resource_group" {
@@ -69,8 +69,8 @@ variable "app_service_plan_name" {
 variable "service_plan" {
   description = "Definition of the dedicated plan to use"
   type = object({
-    sku_name  = string
-    kind      = string
+    sku_name = string
+    kind     = string
   })
 }
 
@@ -81,5 +81,5 @@ variable "enable_https" {
 
 variable "health_check_path" {
   description = "health check url for the application"
-  default = ""
+  default     = ""
 }

@@ -8,10 +8,10 @@ terraform {
   }
   required_version = ">= 0.14.9"
   backend "azurerm" {
-    resource_group_name     = "terraform-state-rg"
-    storage_account_name    = "assignmentstorageaccount"
-    container_name          = "tfstate"
-    key                     = "terraform.tfstate"
+    resource_group_name  = "terraform-state-rg"
+    storage_account_name = "assignmentstorageaccount"
+    container_name       = "tfstate"
+    key                  = "terraform.tfstate"
   }
 }
 provider "azurerm" {

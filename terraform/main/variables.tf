@@ -1,6 +1,6 @@
 variable "environment" {
   description = "Environment where all resource and application would be deployed"
-  default = "dev"
+  default     = "dev"
 }
 
 variable "project_name" {
@@ -9,7 +9,7 @@ variable "project_name" {
 
 variable "create_resource_group" {
   description = "Whether to create resource group and use it for all networking resources"
-  type = bool
+  type        = bool
   default     = true
 }
 
@@ -81,5 +81,5 @@ variable "enable_https" {
 
 variable "health_check_path" {
   description = "health check url for the application"
-  default = ""
+  default     = ""
 }
