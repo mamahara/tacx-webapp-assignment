@@ -9,3 +9,4 @@ module "tacx-webapp-assignment" {
   service_plan = var.service_plan
   health_check_path = var.health_check_path
 }
+  
