@@ -1,4 +1,3 @@
-#Provider, Identity and access parameters
 project_name = "tacx-assignment"
 environment = "dev"
 create_resource_group = true
