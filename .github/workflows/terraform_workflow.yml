@@ -45,10 +45,10 @@ jobs:
         id: plan
         run: |
           cd terraform/main
-          terraform plan --var-file=../environments/dev/dev.tfvars
+          terraform plan --var-file=../environments/prod/prod.tfvars
 
       - name: 'Terraform apply'
         id: apply
         run: |
           cd terraform/main
-          terraform apply --var-file=../environments/dev/dev.tfvars -auto-approve
+          terraform apply --var-file=../environments/prod/prod.tfvars -auto-approve
