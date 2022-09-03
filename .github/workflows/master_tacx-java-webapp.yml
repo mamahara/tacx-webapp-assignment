@@ -4,6 +4,10 @@
 name: Build and deploy WAR app to Azure Web App - tacx-java-webapp
 
 on:
+  workflow_run:
+    workflows: [ "terraform-workflow-001" ]
+    types:
+      - completed
   push:
     branches:
       - master
