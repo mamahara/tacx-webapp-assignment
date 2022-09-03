@@ -8,7 +8,7 @@ on:
   push:
     branches: [ master ]
     paths:
-      - 'terraform/environments/*/*.tf'
+      - 'terraform/environments/*/*.tfvars'
       - 'terraform/main/*.tf'
       - 'terraform/modules/*/*.tf'
 
