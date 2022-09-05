@@ -18,17 +18,17 @@ Functionality:
    iv.  Scripts to provision azure backends for storing state file.
 3.  Github workflow:
     i.  terraform-workflow-001: workflow to init, plan and apply the terraform scripts into azure subscriptions. It uses github secrets to store service principle and clinet secret credentials.
-      ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
-      ARM_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
-      ARM_SUBSCRIPTION_ID: ${{ secrets.MVP_SUBSCRIPTION }}
-      ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+    ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+    ARM_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
+    ARM_SUBSCRIPTION_ID: ${{ secrets.MVP_SUBSCRIPTION }}
+    ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
     ii. Build and deploy WAR app to Azure Web App: This workflow is to build the war file and deploy into azue webapps using Azure credentials which are stored in secrets.
 4.  Scripts:  A monitoring script has been placed to check the status of application and request the application default hostname to verify the application status. Azure cli must be installed locally.
 
 Improvements:
 1.  Application CICD can be put into Azure devops or any CICD toolset.
-2.  Application functionality can be improved 
+2.  Application functionality can be improved and CICD for dpeloyment can be done via docker containers
 
-
-  
-  
+Conclusion:
+This application is only for CICD demo purpose only with terraform and github actions to Azure webapps.
+Thanks
