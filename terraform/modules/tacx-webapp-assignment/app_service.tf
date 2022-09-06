@@ -1,5 +1,5 @@
 #---------------------------------------------------------
-# App Service Plan definition - Default is "true"
+# App Service Plan definition - Default is "true" 
 #----------------------------------------------------------
 resource "azurerm_service_plan" "webapp" {
   name                = var.app_service_plan_name == "" ? format("plan-%s", lower(var.app_service_name)) : var.app_service_plan_name
