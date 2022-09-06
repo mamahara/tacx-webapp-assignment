@@ -9,25 +9,13 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "tbl_profile")
 public class Profile {
-
-    private Long id;
-
+    @Id
     private String passportNumber;
     private String name;
     private String Country;
     private String passportType;
     private boolean isBlacklisted;
     private boolean isPreclearanceDone;
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
 
     public String getPassportNumber() {

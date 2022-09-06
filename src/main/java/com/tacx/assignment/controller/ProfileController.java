@@ -16,6 +16,7 @@ public class ProfileController {
 
     @RequestMapping(Constants.GET_ALL_PROFILE)
     public List<Profile> getAllProfiles() {
+        System.out.println("came inside controller");
         return profileService.getAllProfiles();
     }
 

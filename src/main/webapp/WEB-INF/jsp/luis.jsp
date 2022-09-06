@@ -83,7 +83,6 @@
                     <li ><a href="/luis">Luis & QNA<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-cloud"></span></a></li>
                     <li ><a href="/vision">Computer Vision<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-eye-open"></span></a></li>
                     <li ><a href="/face-recognition">Face Recognition<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
-                    <li ><a href="/speech-api">Speech Service<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-volume-up"></span></a></li>
                     <li ><a href="/passport-mrz">Face Match & MRZ<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-file"></span></a></li>
                 </ul>
             </div>
@@ -101,7 +100,7 @@
             <button id="searchButton" type="submit" class="btn-info"  class="btn">Find Profile</button>
             <button type="button" id="createProfileButton" class="btn-info"  class="btn">Create Profile</button>
         </div>
-        <button logid="allProfileButton" type="submit" class="btn-info"  class="btn">Find All Profile</button>
+        <button id="allProfileButton" type="submit" class="btn-info"  class="btn">Find All Profile</button>
     </form>
 
     <form id="createProfileForm" style="display: none">

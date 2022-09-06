@@ -1,6 +1,6 @@
 #############
 project_name = "tacx-assignment"
-environment = "dev"
+environment = "prod"
 create_resource_group = true
 resource_group_name   = "tacx-assignment-rg"
 location = "westeurope"
