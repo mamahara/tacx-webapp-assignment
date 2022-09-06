@@ -102,8 +102,8 @@
 
             <button class="btn btn-sm btn-primary btn-block" type="submit">Log In</button>
 
-            <input class="btn-info btn-sm btn-primary btn-block" type="button" value="Log In Using Face" id="alpha"
-                   onclick="preview_snapshot()" />
+            <!-- <input class="btn-info btn-sm btn-primary btn-block" type="button" value="Log In Using Face" id="alpha"
+                   onclick="preview_snapshot()" /> -->
             <h4 class="text-center"><a href="${contextPath}/registration">Create an account</a></h4>
             <div id="results" style="display:none">
                 <!-- Your captured image will appear here... -->

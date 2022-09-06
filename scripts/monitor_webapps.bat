@@ -1,35 +1,10 @@
 #/bin/bash
-# Monitor an App Service app with web server logs
+# Monitor an App Service app and healthcheck.
 # set -e # exit if error
 # Variable block
-let "randomIdentifier=$RANDOM*$RANDOM"
-location="West EU"
-resourceGroup="msdocs-app-service-rg-$randomIdentifier"
-tag="monitor-with-logs.sh"
-appServicePlan="msdocs-app-service-plan-$randomIdentifier"
-webapp="msdocs-web-app-$randomIdentifier"
 
-# Create a resource group.
-echo "Creating $resourceGroup in "$location"..."
-az group create --name $resourceGroup --location "$location" --tag $tag
+#login using read only service principal
+az login --service-principal -u 2e304757-a16e-4c4f-9c10-250d2bef7384 -p AFF8Q~28rYQ-bhX15M_R2BhBdyzK2dLkUHpt9c60 --tenant 6a6d383e-938c-4fc2-aac6-f53d87444dfa
 
-# Create an App Service Plan
-echo "Creating $appServicePlan"
-az appservice plan create --name $appServicePlan --resource-group $resourceGroup
-
-# Create a Web App and save the URL
-echo "Creating $webapp"
-url=$(az webapp create --name $webapp --resource-group $resourceGroup --plan $appServicePlan --query defaultHostName | sed -e 's/^"//' -e 's/"$//')
-
-# Enable all logging options for the Web App
-az webapp log config --name $webapp --resource-group $resourceGroup --application-logging azureblobstorage --detailed-error-messages true --failed-request-tracing true --web-server-logging filesystem
-
-# Create a Web Server Log
-curl -s -L $url/404
-
-# Download the log files for review
-az webapp log download --name $webapp --resource-group $resourceGroup
-# </FullScript>
-
-# echo "Deleting all resources"
-# az group delete --name $resourceGroup -y
+# get all  webapps created on the subscriptions Plan
+az webapp list --query "[].{name: name, hostName: defaultHostName, state: state}"

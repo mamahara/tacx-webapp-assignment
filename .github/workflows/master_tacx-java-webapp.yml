@@ -15,6 +15,7 @@ on:
       - 'terraform/**'
       - '.github/**'
       - 'README.md'
+      - 'scripts/**'
   workflow_dispatch:
 
 jobs:
