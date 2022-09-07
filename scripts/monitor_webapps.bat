@@ -1,6 +1,5 @@
 #/bin/bash
 # Monitor an App Service app and healthcheck.
-# set -e # exit if error
 # Variable block
 
 #login using read only service principal

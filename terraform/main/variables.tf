@@ -81,5 +81,5 @@ variable "enable_https" {
 
 variable "health_check_path" {
   description = "health check url for the application"
-  default     = ""
+  default     = "/"
 }
