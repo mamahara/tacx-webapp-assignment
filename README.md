@@ -1,4 +1,4 @@
-# tacx-webapp-assignment
+# tacx-webapp-assignment: https://tacx-java-webapp.azurewebsites.net/
 Introduction: This repository is to create a simple web application and deploy to azure webapps in an automated way.
 1.  Web application: Its a springboot web application which would be deployed into azure webapp with Java runtime with Tomcat container.
 2.  Terraform:  Azure infrastructure for the web application would be provisioned using terraform scripts. Terraform scripts are executed in an automated way using github actions. Any push to the terraform scripts would trigger the azure infrastructure implementation and subsequently application deployment after infra         deployment.
@@ -48,4 +48,5 @@ Improvements:
 
 Conclusion:
 This application is only for CICD demo purpose only with terraform and github actions to Azure webapps.
+Application is accessible on https://tacx-java-webapp.azurewebsites.net/ after deployment 
 Thanks
