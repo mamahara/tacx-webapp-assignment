@@ -15,7 +15,7 @@ AZURE_CLIENT_SECRET = "AFF8Q~28rYQ-bhX15M_R2BhBdyzK2dLkUHpt9c60"
 AZURE_SUBSCRIPTION_ID = "c78f1f7e-9942-4d7d-8c1a-346f43826710"
 
 
-# Monitor Azure resources
+# Monitor Azure resources and applications deployed
 def monitor():
     #
     # Create the Resource Manager Client with an Application (service principal readonly) token provider
