@@ -5,6 +5,7 @@ Introduction: This repository is to create a simple web application and deploy t
 3.  Github action workflows: This repository has 2 workflows configured for automated infrastructure deployment and application deployment to azure.
 4.  Scripts:  repository has additional scripts for monitoring the webapps application endpoint and status of the server.
 
+
 Prerequisite: 
 1.  Azure CLI installation is required to run the scripts from local
 2.  Optionally, it is required to install a IDE locally and install terraform to pull and push to repository to enhance the project source code or terraform scripts although changes can also be done on the github and any commit will trigger the workflows.
