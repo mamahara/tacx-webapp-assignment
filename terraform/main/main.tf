@@ -1,4 +1,4 @@
-#main area
+#main tf file
 module "tacx-webapp-assignment" {
   source                = "../modules/tacx-webapp-assignment"
   create_resource_group = local.resource_group_general.create_resource_group
