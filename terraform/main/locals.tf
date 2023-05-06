@@ -1,4 +1,4 @@
-
+#compatible with kubernetes
 locals {
   environment = var.environment
   location    = var.location
